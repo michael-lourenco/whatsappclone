@@ -1,10 +1,10 @@
-.chatWindow{
+.chatWindow {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.chatWindow-header{
+.chatWindow-header {
     height: 60px;
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -12,33 +12,32 @@
     align-items: center;
 }
 
-.chatWindow-headerInfo{
+.chatWindow-headerInfo {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.chatWindow-avatar{
+.chatWindow-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
-    
 }
 
-.chatWindow-name{
+.chatWindow-name {
     font-size: 17px;
     color: #000;
 }
 
-.chatWindow-headerButtons{
+.chatWindow-headerButtons {
     display: flex;
     align-items: center;
     margin-right: 15px;
 }
 
-.chatWindow-btn{
+.chatWindow-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -50,7 +49,7 @@
     transition: all ease 0.3s;
 }
 
-.chatWindow-body{
+.chatWindow-body {
     flex: 1;
     overflow-y: auto;
     background-color: #e5ddd5;
@@ -63,25 +62,28 @@
 .chatWindow-body::-webkit-scrollbar {
     width: 6px;
     height: 6px;
-  }
-  
-  .chatWindow-body::-webkit-scrollbar-thumb {
+}
+
+.chatWindow-body::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-.chatWindow-footer{
+}
+
+.chatWindow-footer {
     height: 62px;
     display: flex;
     align-items: center;
 }
-.chatWindow-pre{
+
+.chatWindow-pre {
     display: flex;
     margin: 0 15px;
 }
 
-.chatWindow-inputArea{
+.chatWindow-inputArea {
     flex: 1;
 }
-.chatWindow-input{
+
+.chatWindow-input {
     width: 100%;
     height: 40px;
     border: 0;
@@ -92,24 +94,23 @@
     color: #4a4a4a;
     padding-left: 15px;
 }
-.chatWindow-pos{
+
+.chatWindow-pos {
     display: flex;
     margin: 0 15px;
 }
 
-.chatWindow-emojiarea{
+.chatWindow-emojiarea {
     height: 200px;
     overflow-y: hidden;
     transition: all ease 0.3s;
 }
 
-aside.emoji-picker-react{
+aside.emoji-picker-react {
     width: auto;
     background: none;
-
 }
 
-.emoji-picker-react .emoji-group:before{
+.emoji-picker-react .emoji-group:before {
     background: none;
 }
-

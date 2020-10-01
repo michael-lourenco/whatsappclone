@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import EmojiPicker from "emoji-picker-react";
 import "./ChatWindow.css";
 
-import Api from '../Api';
+import Api from "../Api";
 
 import MessageItem from "./MessageItem";
 
@@ -28,13 +28,13 @@ export default ({ user, data }) => {
   const [text, setText] = useState("");
   const [listening, setListening] = useState(false);
   const [list, setList] = useState([]);
-  const [users,setUsers]=useState([]);
+  const [users, setUsers] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     setList([]);
-    let unsub = Api.onChatContent(data.chatId,setList,setUsers);
+    let unsub = Api.onChatContent(data.chatId, setList, setUsers);
     return unsub;
-  },[data.chatId]);
+  }, [data.chatId]);
 
   useEffect(() => {
     if (body.current.scrollHeight > body.current.offsetHeight) {
@@ -74,16 +74,16 @@ export default ({ user, data }) => {
     }
   };
 
-  const handleInputKeyUp =(e)=>{
-    if(e.keyCode===13){
+  const handleInputKeyUp = (e) => {
+    if (e.keyCode === 13) {
       handleSendClick();
     }
-  }
+  };
 
   const handleSendClick = () => {
-    if(text!==''){
-      Api.sendMessage(data,user.id,'text',text,users);
-      setText('');
+    if (text !== "") {
+      Api.sendMessage(data, user.id, "text", text, users);
+      setText("");
       setEmojiOpen(false);
     }
   };

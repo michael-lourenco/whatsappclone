@@ -1,10 +1,9 @@
-.message-line{
-    margin-bottom:10px;
+.message-line {
+    margin-bottom: 10px;
     display: flex;
-
 }
 
-.message-item{
+.message-item {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1px 1px #ccc;
@@ -14,13 +13,12 @@
     max-width: 90%;
 }
 
-.message-text{
+.message-text {
     font-size: 14px;
     margin: 5px 40px 5px 5px;
-
 }
 
-.message-date{
+.message-date {
     font-size: 11px;
     color: #999;
     margin-right: 5px;
